@@ -1,0 +1,54 @@
+/* DescriptionBox.css */
+.descriptionbox {
+    margin: clamp(20px, 5%, 100px) clamp(40px, 10%, 200px); /* Responsive margins */
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    margin-bottom: clamp(10px, 2vw, 20px); /* Responsive margin between navigator and description */
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(14px, 2vw, 18px); /* Responsive font size */
+    font-weight: 600;
+    width: clamp(150px, 20vw, 200px); /* Responsive width */
+    height: clamp(50px, 8vw, 70px); /* Responsive height */
+    border: 1px solid #d0d0d0;
+    padding: clamp(5px, 1vw, 10px); /* Responsive padding */
+}
+
+.descriptionbox-nav-box.fade {
+    background: #FBFBFB;
+    color: #555;
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 2vw, 30px); /* Responsive gap between paragraphs */
+    border: 1px solid #D0D0D0;
+    padding: clamp(20px, 3vw, 40px); /* Responsive padding */
+    padding-bottom: clamp(40px, 5vw, 80px); /* Responsive bottom padding */
+}
+
+.descriptionbox-description p {
+    font-size: clamp(14px, 1.5vw, 18px); /* Responsive font size for text */
+    line-height: 1.6;
+}
+@media(max-width:1280px){
+    .descriptionbox{
+        margin: 60px;
+    }
+}
+@media(max-width:800px){
+    .descriptionbox{
+        margin: 60px 20px;
+    }
+    .descriptionbox-description{
+        font-size: 14px;
+    }
+}
+
