@@ -5,7 +5,7 @@
     flex-direction: row; /* Default flex direction */
     margin: 50px auto; /* Center and ensure space around */
     padding: 0 5%;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(244,196,196,1) 77%, rgba(244,196,196,1) 84%, rgba(249,117,117,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,248,255,1) 35%, rgba(100,149,237,1) 77%, rgba(65,105,225,1) 84%, rgba(25,25,112,1) 100%);
     box-sizing: border-box;
 }
 
@@ -35,7 +35,7 @@
     width: clamp(180px, 20vw, 220px);
     height: clamp(45px, 6vh, 55px);
     border-radius: 25px;
-    background-color: #ff4141;
+    background-color: #1c1c6b;
     border: none;
     color: white;
     font-size: clamp(16px, 2.5vw, 18px);
@@ -74,6 +74,7 @@
         padding-top: 30px;
     }
 }
+
 @media(max-width:1024px){
     .offers{
         padding: 0px 60px;
@@ -98,6 +99,7 @@
         padding-top: 10px;
     }
 }
+
 @media(max-width:800px){
     .offers{
         margin-bottom: 60px;
@@ -117,6 +119,7 @@
         font-size: 12px;
     }
 }
+
 @media(max-width:500px){
     .offers{
         height: 25vh;
@@ -130,7 +133,6 @@
     }
     .offers-right img{
         width: 120px;
-
     }
     .offers-left button{
         width: 120px;
