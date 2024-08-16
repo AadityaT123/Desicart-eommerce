@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(252,238,238,1) 54%, rgba(244,196,196,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(173,216,230,1) 54%, rgba(70,130,180,1) 100%);
   display: flex;
 }
 
@@ -15,13 +15,13 @@
 }
 
 .hero-left h2 {
-  color: #090909;
+  color: #000000; /* Change to white for better contrast with blue background */
   font-size: max(2vw, 26px);
   font-weight: 600;
 }
 
 .hero-left p {
-  color: #171717;
+  color: #000000; /* Lighter blue for better visibility */
   font-size: max(5vw, 20px);
   font-weight: 700;
 }
@@ -45,8 +45,8 @@
   height: max(5vw, 35px);
   border-radius: 75px;
   margin-top: 30px;
-  background: #ff4141;
-  color: white;
+  background: #1e90ff; 
+  color: rgb(0, 0, 0);
   font-size: max(1.5vw, 14px);
   font-weight: 500;
 }
@@ -105,6 +105,7 @@
    width: 400px;
   }
 }
+
 @media(max-width:800px){
   .hero-left{
    padding-left: 30px;
@@ -127,6 +128,7 @@
     width: 300px;
    }
 }
+
 @media(max-width:500px){
   .hero-left{
    flex-direction: column;
@@ -147,6 +149,5 @@
     width: 200px;
     height: 45px;
     font-size: 14px;
-    
    }
 }
