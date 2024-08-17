@@ -151,7 +151,7 @@
         height: 80px;
         width: 100%;
         position: absolute;
-        background-color: #ffffff; /* White Background */
+        background-color: #ffffff; 
         justify-content: center;
         top: 50px;
     }
