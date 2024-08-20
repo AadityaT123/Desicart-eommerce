@@ -1,7 +1,7 @@
 .loginsignup {
     width: 100%;
     min-height: 100vh; 
-    background: #fce3fe;
+    background: #e3f2fd; /* Light blue background */
     padding-top: 50px; /* Reduced the top padding */
     display: flex;
     justify-content: center;
@@ -28,6 +28,7 @@
     margin: 20px 0;
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     text-align: left;
+    color: #1e88e5; /* Blue color for headings */
 }
 
 .loginsignup-fields {
@@ -53,7 +54,7 @@
     width: 100%;
     height: 65px;
     color: white;
-    background: #ff4141;
+    background: #1e88e5; /* Blue button background */
     margin-top: 20px;
     border: none;
     border-radius: 5px;
@@ -71,7 +72,7 @@
 }
 
 .loginsignup-login span {
-    color: #ff4141;
+    color: #1e88e5; /* Blue color for link */
     font-weight: 600;
     cursor: pointer;
 }
@@ -120,22 +121,46 @@
         gap: 10px;
     }
 }
-@media(max-width :800px){
-    .loginsignup-container{
+
+@media(max-width: 800px) {
+    .loginsignup-container {
         padding: 20px 30px;
         margin-top: 20px;
     }
-    .loginsignup-container h1{
+    .loginsignup-container h1 {
         font-size: 24px;
     }
-    .loginsignup-fields{
+    .loginsignup-fields {
         margin-top: 20px;
     }
-    .loginsignup-fields input{
+    .loginsignup-fields input {
         height: 50px;
     }
-    .loginsignup-container button{
+    .loginsignup-container button {
         height: 50px;
         font-size: 16px;
     }
+}
+.loginsignup-agree input[type="checkbox"] {
+    appearance: none; /* Remove default checkbox styling */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #1e88e5; /* Blue border */
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.loginsignup-agree input[type="checkbox"]:checked {
+    background-color: #1e88e5; /* Blue background when checked */
+    border-color: #1e88e5; /* Blue border when checked */
+}
+
+.loginsignup-agree input[type="checkbox"]:checked::after {
+    content: '\2713'; /* Checkmark */
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    left: 2px;
 }
